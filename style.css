@@ -1,0 +1,75 @@
+/*
+  YELLOW #DCF763
+  BLUE #8EDCE6
+*/
+
+body{
+  background: #435058;
+  font-family: 'Arvo', serif;
+}
+
+h1{
+  position: absolute;
+  top: 20px; left: 20px;
+}
+
+p{
+  position: absolute;
+  top: 220px; left: 220px;
+}
+
+ul{
+  position: absolute;
+  bottom: 30px; right: 20px;
+  text-align: right;
+}
+
+ul li{
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+ul li a{
+  text-decoration: none;
+}
+
+.blue{
+  color: #8EDCE6;
+}
+.bar-blue.bar::after{
+  background: #8EDCE6;
+}
+.yellow{
+  color: #DCF763;
+}
+.bar-yellow.bar::after{
+  background: #DCF763;
+}
+
+.bar::after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -20px; right: 0px;
+  height: 2px;
+  width: 100px;
+}
+.bar-left::after{
+  left: 0px; right: auto;
+}
+
+.f-bold{
+  font-weight: bold;
+}
+
+.f-24px{
+  font-size: 24px;
+}
+
+.f-18px{
+  font-size: 18px;
+}
+
+.f-12px{
+  font-size: 12px;
+}
