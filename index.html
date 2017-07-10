@@ -10,18 +10,31 @@
 </head>
 <body>
 
-  <h1 class="bar bar-yellow yellow f-24px f-bold">dimitri-gigot.be</h1>
+  <div id="background">
+    <div class="blue_bubble bubbles"></div>
+    <div class="pink_bubble bubbles"></div>
+    <div class="orange_bubble bubbles"></div>
+  </div>
 
-  <p class="bar bar-left bar-blue blue f-18px">Hi ! my name is Dimitri <br>
-  I’m a 26 yo Javascript Developer <br>
-  living with two cats</p>
+  <div id="main">
+    <div class="corner_bottom_left">
+      <h1>Dimitri <span>Gigot</span></h1>
+      <h2>Fullstack Javascript Developer</h2>
+    </div>
+  </div>
+  <img id="gif" alt=""src="./dim.gif" alt="">
 
-  <ul class="bar bar-blue f-12px">
-    <li><a href="" class="blue">github</a></li>
-    <li><a href="" class="blue">npm</a></li>
-    <li><a href="" class="blue">twitter</a></li>
-    <li><a href="" class="blue">linkedin</a></li>
-  </ul>
+  <script>
+  var $background = document.getElementById('background')
+  var $main = document.getElementById('main')
+  var $gif = document.getElementById('gif')
 
+  setTimeout(function(){
+    $main.classList.add('open')
+    $background.classList.add('open')
+    $gif.classList.add('open')
+  }, 1000)
+
+  </script>
 </body>
 </html>
